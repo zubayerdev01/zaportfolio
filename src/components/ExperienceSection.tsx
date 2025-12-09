@@ -4,7 +4,6 @@ import SectionHeading from "@/components/section-heading";
 import { useSectionInView } from "@/hooks/use-section-in-view";
 import { experiencesData } from "@/lib/data";
 
-
 export default function ExperienceSection() {
   const { ref } = useSectionInView("Experience");
   return (
@@ -14,8 +13,7 @@ export default function ExperienceSection() {
         content="Professional experience that I have accumulated over several years."
       />
       <div className="relative max-w-3xl mx-auto ">
-        
-        {experiencesData.map((exp,index) => (
+        {experiencesData.map((exp, index) => (
           <ExperinceCard key={index} {...exp} index={index} />
         ))}
       </div>

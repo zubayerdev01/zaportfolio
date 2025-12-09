@@ -3,14 +3,14 @@ import { navLinks } from "@/lib/data";
 export type SectionName = (typeof navLinks)[number]["name"];
 
 export type Project = {
-  title: string
-  description: string
-  technologies: string[]
+  title: string;
+  description: string;
+  technologies: string[];
   links: {
-    preview: string
-    github: string
-    githubApi: string
-  }
+    preview: string;
+    github: string;
+    githubApi: string;
+  };
 };
 
 export type Experience = {
@@ -21,11 +21,8 @@ export type Experience = {
   technologies: string[];
 };
 
-export type NavName = {
-  name: string;
-}
-
-export type NavName = "Home" | "About" | "Experience" | "Projects" | "Contact";
+export type NavName = SectionName;
+//  "Home" | "About" | "Experience" | "Projects" | "Contact";
 
 export type NavLink = {
   name: NavName;
