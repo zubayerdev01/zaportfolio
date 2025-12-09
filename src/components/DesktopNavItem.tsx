@@ -1,9 +1,10 @@
 import { useActiveSection } from "@/components/context/active-section-provider";
+import type { NavName } from "@/lib/types";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 type NavLink = {
-  name: string;
+  name: NavName;
   href: string;
 };
 

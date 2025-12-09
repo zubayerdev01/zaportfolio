@@ -1,10 +1,15 @@
+import type { NavName } from "@/lib/types";
 import Link from "next/link";
+type NavLink = {
+  name: NavName;
+  href: string;
+};
 
 interface MobileNavItemProps extends NavLink {
   setIsOpen: (isOpen: boolean) => void;
 }
 
-const MobileNavItem = ({name,href, setIsOpen}: MobileNavItemProps) => {
+const MobileNavItem = ({ name, href, setIsOpen }: MobileNavItemProps) => {
   return (
     <li
       onClick={() => setIsOpen(false)}

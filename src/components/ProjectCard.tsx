@@ -1,9 +1,19 @@
 "use client";
-import { Project } from "@/lib/types";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
 import { MagicCard } from "./ui/magic-card";
+
+export interface ProjectCardProps {
+  index: number;
+  title: string;
+  description: string;
+  links: {
+    github: string;
+    demo?: string;
+  };
+  technologies: string[];
+}
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
@@ -18,11 +28,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
-type ProjectCardProps = Project & {
-  index: number;
-};
-
-export default function ProjectCard({ index, ...data }): ProjectCardProps {
+export default function ProjectCard({ index, ...data }: ProjectCardProps) {
   return (
     <motion.div
       key={data.title}
