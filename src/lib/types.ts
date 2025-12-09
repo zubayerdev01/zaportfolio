@@ -21,6 +21,10 @@ export type Experience = {
   technologies: string[];
 };
 
+export type NavName = {
+  name: string;
+}
+
 export type NavName = "Home" | "About" | "Experience" | "Projects" | "Contact";
 
 export type NavLink = {

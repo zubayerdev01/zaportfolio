@@ -2,21 +2,26 @@ import { useActiveSection } from "@/components/context/active-section-provider";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const DesktopNavItem = (data: NavLink) => {
+type NavLink = {
+  name: string;
+  href: string;
+};
+
+const DesktopNavItem = ({ name, href }: NavLink) => {
   const { setActiveSection, setTimeOfLastClick, activeSection } =
     useActiveSection();
   return (
     <li>
       <Link
-        href={data.href}
+        href={href}
         className="hover:text-foreground relative px-4 py-2 transition-colors"
         onClick={() => {
-          setActiveSection(data.name);
+          setActiveSection(name);
           setTimeOfLastClick(Date.now());
         }}
       >
-        {data.name}
-        {data.name === activeSection && (
+        {name}
+        {name === activeSection && (
           <motion.span
             className="bg-red-50 absolute inset-0 -z-10 rounded-full"
             layoutId="activeSection"
