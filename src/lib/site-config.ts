@@ -28,7 +28,7 @@ export const siteConfig = {
     "Tech enthusiast",
   ],
   creator: "Build With Zubayer Ahamed",
-  url: env.local.NEXT_PUBLIC_SITE_URL,
+  url: env.NEXT_PUBLIC_SITE_URL,
   contact: {
     email: "zubayerdev.org@gmail.com",
     linkedin: "#",
