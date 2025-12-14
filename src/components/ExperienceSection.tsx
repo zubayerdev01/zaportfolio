@@ -12,7 +12,7 @@ export default function ExperienceSection() {
         heading="My Experience"
         content="Professional experience that I have accumulated over several years."
       />
-      <div className="relative max-w-3xl mx-auto ">
+      <div className="relative max-w-4xl mx-auto ">
         {experiencesData.map((exp, index) => (
           <ExperinceCard key={index} {...exp} index={index} />
         ))}

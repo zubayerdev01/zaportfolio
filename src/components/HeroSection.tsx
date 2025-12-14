@@ -54,7 +54,7 @@ export default function HeroSection() {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
+        className="font-heading max-w-4xl text-4xl font-extrabold md:text-5xl"
       >
         I&apos;m a{" "}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">

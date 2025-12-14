@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+
 import { Experience, NavLink, Project, Skill } from "./types";
 
 export const navLinks: NavLink[] = [
@@ -26,36 +27,81 @@ export const navLinks: NavLink[] = [
 
 export const projectsData: Project[] = [
   {
-    title: "Chat Collector Pro",
+    image: "/images/eventry_img.png",
+    title: "Event Booking Website",
     description:
-      "A comprehensive chat collector application built with React and Node.js, featuring real-time collaboration, project tracking, and team management capabilities.",
+      "A full-stack event booking website that allows users to browse, book, and manage event tickets online.",
     technologies: [
-      "React.js",
-      "Node.js",
+      "Next.js",
+      "JavaScript",
       "MongoDB",
-      "Socket.io",
-      "Material-UI",
+      "Resent API",
+      "Tailwind CSS",
+      "Auth.js",
     ],
     links: {
-      preview: "#",
-      github: "#",
+      preview: "https://event-booking-app-virid.vercel.app/",
+      github: "https://github.com/zubayerdev01/event-booking-app",
       githubApi: "#",
     },
   },
   {
-    title: "Magic Bento Box",
+    image: "/images/eCommerce.png",
+    title: "E-commerce Platform",
     description:
-      "Magic Bento Box is a platform for creating and sharing magic recipes that can be used in the game.",
+      "A scalable e-commerce platform with features like product listings, shopping cart, user authentication, and payment integration.",
     technologies: [
-      "Next.js",
-      "TypeScript",
-      "Express.js",
-      "PostgreSQL",
-      "Stripe",
+      "React.js",
+      "JavaScript",
+      "Node.js",
+      "MongoDB",
+      "Stripe API",
+      "Tailwind CSS",
+      "Auth.js",
     ],
     links: {
-      preview: "#",
-      github: "#",
+      preview: "https://e-commerce-store-two-nu.vercel.app/",
+      github: "https://github.com/zubayerdev01/e-commerce-store",
+      githubApi: "#",
+    },
+  },
+  {
+    image: "/images/cineRantal.png",
+    title: " Movie Rental Application",
+    description:
+      "A movie rental application that allows users to browse, rent, and review movies online.",
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Node.js",
+      "MongoDB",
+      "Stripe API",
+      "Tailwind CSS",
+      "Auth.js",
+    ],
+    links: {
+      preview: "https://cine-rental-app-gray.vercel.app/",
+      github: "https://github.com/zubayerdev01/cine-rental-app",
+      githubApi: "#",
+    },
+  },
+  {
+    image: "/images/foodDelivery.png",
+    title: "Food Order Management System",
+    description:
+      "A food order management system that enables users to order food online, track deliveries, and manage their orders efficiently.",
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Node.js",
+      "MongoDB",
+      "Stripe API",
+      "Tailwind CSS",
+      "Auth.js",
+    ],
+    links: {
+      preview: "https://food-order-management-app.vercel.app/",
+      github: "https://github.com/zubayerdev01/food-order-management-app",
       githubApi: "#",
     },
   },
@@ -63,36 +109,50 @@ export const projectsData: Project[] = [
 
 export const experiencesData: Experience[] = [
   {
-    title: "Software Engineer",
-    company: "CloudTech Ventures, remote",
-    description:
-      "Currently developing scalable cloud-based applications and microservices. Responsible for architecting solutions, code reviews, and mentoring junior developers in best practices.",
-    period: "2023 Jul - present",
-    technologies: ["React", "TypeScript", "AWS", "GraphQL", "Kubernetes"],
-  },
-  {
-    title: "Backend Developer Intern",
-    company: "DataFlow Systems, remote",
-    description:
-      "Assisted in developing RESTful APIs and database optimization. Gained experience in agile development methodologies and collaborated with senior developers on complex projects.",
-    period: "2023 Jan - 2023 Jul",
-    technologies: ["Java", "Spring Boot", "MySQL", "Redis"],
-  },
-  {
     title: "Full Stack Developer",
-    company: "Digital Innovations, remote",
+    company: "Freelance / Personal Projects, Remote",
     description:
-      "Built responsive web applications from concept to deployment. Worked with clients to understand requirements and delivered custom solutions that exceeded expectations.",
-    period: "2022 Jul - 2022 Dec",
-    technologies: ["Vue.js", "Python", "PostgreSQL", "Docker"],
+      "Developed and deployed full-stack web applications using modern technologies. Focused on building responsive UIs, secure authentication, and scalable backends through self-directed projects simulating real-world requirements.",
+    period: "2023 Jan - Present",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "shadcn/ui",
+      "Tailwind CSS",
+      "Node.js",
+      "MongoDB",
+    ],
   },
   {
-    title: "Junior Software Engineer",
-    company: "TechCorp Solutions, San Francisco CA",
+    title: "Frontend Developer",
+    company: "Personal Projects, Remote",
     description:
-      "Developed and maintained web applications using modern JavaScript frameworks. Collaborated with cross-functional teams to deliver high-quality software solutions.",
-    period: "2022 Jan - 2022 Jul",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
+      "Built interactive and performant user interfaces with React and Next.js. Implemented authentication, email services, and optimized components for better user experience and performance.",
+    period: "2024 Jun - 2025 Dec",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "NextAuth.js",
+      "Resend",
+      "shadcn/ui",
+    ],
+  },
+  {
+    title: "MERN Stack Developer",
+    company: "Self-Taught Projects, Remote",
+    description:
+      "Created complete web applications from scratch, including RESTful APIs, database integration, and deployment. Emphasized clean code, state management, and responsive design.",
+    period: "2023 Jul - 2024 May",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "TypeScript"],
+  },
+  {
+    title: "Junior Web Developer",
+    company: "Learning & Side Projects, Remote",
+    description:
+      "Gained hands-on experience by building multiple applications, experimenting with modern tools and best practices. Collaborated with open-source concepts and focused on problem-solving.",
+    period: "2022 Dec - 2023 Jun",
+    technologies: ["React", "JavaScript", "Node.js", "Express", "MongoDB"],
   },
 ];
 

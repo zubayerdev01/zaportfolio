@@ -9,7 +9,7 @@ import SectionDivider from "@/components/section-divider";
 
 export default function Home() {
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div className="max-w-4xl mx-auto flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
       <Header />
       <HeroSection />
       <AboutSection />
