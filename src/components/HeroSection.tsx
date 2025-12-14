@@ -2,16 +2,20 @@
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { GridPattern } from "@/components/ui/grid-pattern";
+import { useSectionInView } from "@/hooks/use-section-in-view";
 import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useSectionInView } from "@/hooks/use-section-in-view";
 
 export default function HeroSection() {
   const { ref } = useSectionInView("Home");
   return (
-    <section ref={ref} id="home" className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28">
+    <section
+      ref={ref}
+      id="home"
+      className="relative my-10 mb-60 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28"
+    >
       <GridPattern
         width={80}
         height={120}
@@ -70,7 +74,7 @@ export default function HeroSection() {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        You have a project in mind? Let&aspon;s talk about it!
+        You have a project in mind? Let&apos; s talk about it!
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
