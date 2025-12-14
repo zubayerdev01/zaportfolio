@@ -39,6 +39,6 @@ export const siteConfig = {
     linkedin: "#",
     github: "https://github.com/zubayerdev01",
     mailTo: "mailto:zubayerdev.org@gmail.com",
-    cvPdf: "/john-doe-cv.pdf",
+    cvPdf: "/Zubayer_Ahamed_CV.pdf",
   },
 };
