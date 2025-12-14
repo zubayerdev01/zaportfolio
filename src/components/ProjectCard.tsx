@@ -7,11 +7,12 @@ import { MagicCard } from "./ui/magic-card";
 
 export interface ProjectCardProps {
   index: number;
+  image: string;
   title: string;
   description: string;
   links: {
     github: string;
-    demo?: string;
+    demo: string;
   };
   technologies: string[];
 }
@@ -44,7 +45,7 @@ export default function ProjectCard({ index, ...data }: ProjectCardProps) {
     >
       <MagicCard className="flex flex-col h-full cursor-pointer p-6 md:p-8 rounded-2xl relative overflow-hidden group">
         <Link
-          href={data.links.preview || data.links.demo || data.links.github}
+          href={data.links.demo ?? "#"}
           aria-label={data.title}
           target="_blank"
           className="absolute inset-0 z-10"
@@ -63,7 +64,7 @@ export default function ProjectCard({ index, ...data }: ProjectCardProps) {
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <Image
-                src={data.image!}
+                src={data.image}
                 alt={data.title}
                 fill
                 className="object-cover"

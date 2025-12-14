@@ -40,9 +40,8 @@ export const projectsData: Project[] = [
       "Auth.js",
     ],
     links: {
-      preview: "https://event-booking-app-virid.vercel.app/",
+      demo: "https://event-booking-app-virid.vercel.app/",
       github: "https://github.com/zubayerdev01/event-booking-app",
-      githubApi: "#",
     },
   },
   {
@@ -60,9 +59,8 @@ export const projectsData: Project[] = [
       "Auth.js",
     ],
     links: {
-      preview: "https://e-commerce-store-two-nu.vercel.app/",
+      demo: "https://e-commerce-store-two-nu.vercel.app/",
       github: "https://github.com/zubayerdev01/e-commerce-store",
-      githubApi: "#",
     },
   },
   {
@@ -80,9 +78,8 @@ export const projectsData: Project[] = [
       "Auth.js",
     ],
     links: {
-      preview: "https://cine-rental-app-gray.vercel.app/",
+      demo: "https://cine-rental-app-gray.vercel.app/",
       github: "https://github.com/zubayerdev01/cine-rental-app",
-      githubApi: "#",
     },
   },
   {
@@ -100,9 +97,8 @@ export const projectsData: Project[] = [
       "Auth.js",
     ],
     links: {
-      preview: "https://food-order-management-app.vercel.app/",
+      demo: "https://food-order-management-app.vercel.app/",
       github: "https://github.com/zubayerdev01/food-order-management-app",
-      githubApi: "#",
     },
   },
 ] as const;

@@ -2,14 +2,13 @@ import { navLinks } from "./data";
 export type SectionName = (typeof navLinks)[number]["name"];
 
 export type Project = {
-  image?: string;
+  image: string;
   title: string;
   description: string;
   technologies: string[];
   links: {
-    preview: string;
+    demo: string;
     github: string;
-    githubApi: string;
   };
 };
 
