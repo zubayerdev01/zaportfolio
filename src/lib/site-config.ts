@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Zubayer Ahamed",
   title: "Zubayer Ahamed | Front-end developer",
   description:
-    "Hello, I'm John. I am front-end developer from Poland. I enjoy building sites and apps. My focus is React (Next.js).",
+    " Welcome to Zubayer Ahamed's portfolio! Explore projects and skills of a passionate front-end developer from Banglasesh specializing in React and Next.js.",
   keywords: [
     "John Doe",
     "Front-end developer",
